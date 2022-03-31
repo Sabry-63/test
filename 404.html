@@ -17,11 +17,11 @@
   <body> 
     <!-- Start Navbar-->
     <nav class="navbar navbar-expand-lg navbar-light" id="nav">
-      <div class="container-fluid"><a class="navbar-brand" href="index.html"> <img src="content/assets/images/navbar/logo.png" alt="logo"></a>
+      <div class="container-fluid"><a class="navbar-brand" href="index.html"> <img class="d-none d-md-block logo-nav" src="content/assets/images/navbar/logo.png" alt="logo"><img class="d-block d-md-none logo-nav" src="content/assets/images/navbar/logo-mob.png" alt="logo"></a>
         <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item active"><a class="nav-link" href="#">الرئيسية</a></li>
+            <li class="nav-item active"><a class="nav-link" href="index.html">الرئيسية</a></li>
             <li class="nav-item">
               <div class="dropdown dropdown-package p-1">
                 <button class="btn dropdown-toggle" id="package" type="button" data-bs-toggle="dropdown" aria-expanded="false">شركاؤنا</button>
@@ -50,7 +50,7 @@
                         <option value="2">Two</option>
                         <option value="3">Three</option>
                       </select>
-                    </div><a class="dropdown-package__content-link" href="#">انتقل</a>
+                    </div><a class="dropdown-package__content-link" href="partners.html">انتقل</a>
                   </div>
                 </form>
               </div>
@@ -83,7 +83,7 @@
                         <option value="2">Two</option>
                         <option value="3">Three</option>
                       </select>
-                    </div><a class="dropdown-package__content-link" href="#">انتقل</a>
+                    </div><a class="dropdown-package__content-link" href="factories.html">انتقل</a>
                   </div>
                 </form>
               </div>
@@ -116,7 +116,7 @@
                         <option value="2">Two</option>
                         <option value="3">Three</option>
                       </select>
-                    </div><a class="dropdown-package__content-link" href="#">انتقل</a>
+                    </div><a class="dropdown-package__content-link" href="productandservice.html">انتقل</a>
                   </div>
                 </form>
               </div>
@@ -149,44 +149,12 @@
                         <option value="2">Two</option>
                         <option value="3">Three</option>
                       </select>
-                    </div><a class="dropdown-package__content-link" href="#">انتقل</a>
+                    </div><a class="dropdown-package__content-link" href="overs.html">انتقل</a>
                   </div>
                 </form>
               </div>
             </li>
-            <li class="nav-item">
-              <div class="dropdown dropdown-package p-1">
-                <button class="btn dropdown-toggle" id="package" type="button" data-bs-toggle="dropdown" aria-expanded="false">الباقات</button>
-                <form class="dropdown-menu" action="" aria-labelledby="package">
-                  <div class="d-flex dropdown-package__content">
-                    <div class="form-group"> 
-                      <select class="form-select" aria-label="Default select example">
-                        <option selected="">المدينة المنورة</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                      </select>
-                    </div>
-                    <div class="form-group"> 
-                      <select class="form-select" aria-label="Default select example">
-                        <option selected="">المدينة المنورة</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                      </select>
-                    </div>
-                    <div class="form-group"> 
-                      <select class="form-select" aria-label="Default select example">
-                        <option selected="">الالكترونيات و ملحقاتها</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                      </select>
-                    </div><a class="dropdown-package__content-link" href="#">انتقل</a>
-                  </div>
-                </form>
-              </div>
-            </li>
+            <li class="nav-item"><a class="nav-link fw-bold" href="packages.html">الباقات </a></li>
             <li class="nav-item">
               <div class="dropdown dropdown-filter p-1">
                 <button class="btn dropdown-toggle" id="filter" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -226,7 +194,7 @@
                       <option value="Dropdown item 6">النشاط 6</option>
                     </select>
                   </div>
-                  <div class="text-center mt-3"><a href="#">الفلتر</a></div>
+                  <div class="text-center mt-3"><a class="dropdown-package__content-link" href="#"> الفلتر </a></div>
                 </form>
               </div>
             </li>
@@ -244,7 +212,7 @@
           </ul>
         </div>
         <div class="navbar-content d-flex align-items-center"> 
-          <div class="dropdown dropdown-country">
+          <div class="dropdown dropdown-country d-md-block d-none">
             <button class="btn dropdown-toggle" id="selectCountry" type="button" data-bs-toggle="dropdown" aria-expanded="false">
               <div class="dropdown-country__box"><img src="content/assets/images/navbar/sa.svg" alt="Country"></div>
             </button>
@@ -255,18 +223,18 @@
               <li class="d-flex jusuify-content-between align-items-center dropdown-country__content px-2"><a class="dropdown-item dropdown-country__content-text" href="#">فلسطين</a><img class="dropdown-country__content-img" src="content/assets/images/navbar/ps.svg" alt="Counrty"></li>
             </ul>
           </div>
-          <div class="lang-type mx-3"> 
+          <div class="lang-type d-md-block d-none mx-3"> 
             <div class="dropdown dropdown-lang">
-              <button class="btn dropdown-toggle" id="selectLang" type="button" data-bs-toggle="dropdown" aria-expanded="false"><img src="content/assets/images/navbar/lang.png" alt="lang"></button>
+              <button class="btn dropdown-toggle" id="selectLang" type="button" data-bs-toggle="dropdown" aria-expanded="false"><img src="content/assets/images/navbar/lang.png" alt="lang" title="لغة الموقع"></button>
               <ul class="dropdown-menu" aria-labelledby="selectLang">
                 <li><a class="dropdown-item" href="#">عربي </a></li>
                 <li><a class="dropdown-item" href="#">انجليزي</a></li>
               </ul>
             </div>
           </div>
-          <div class="login-btn">
+          <div class="login-btn"><span> <i class="fa fa-user-circle" aria-hidden="true"></i></span><span class="border-end"> <a class="main-color" href="singup.html">التسجيل </a></span>
             <div class="dropdown dropdown-login">
-              <button class="btn dropdown-toggle" id="loginMenu" type="button" data-bs-toggle="dropdown" aria-expanded="false"><span> <i class="fa fa-user-circle" aria-hidden="true"></i></span><span class="border-end">الدخول</span><span>التسجيل</span></button>
+              <button class="btn dropdown-toggle" id="loginMenu" type="button" data-bs-toggle="dropdown" aria-expanded="false"><span> <a class="main-color" href="singin.html">الدخول </a></span></button>
               <div class="dropdown-menu p-3" aria-labelledby="loginMenu">
                 <h4 class="text-center mb-3">تسجيل الدخول</h4>
                 <form class="login__content-form" action="" id="login-form">
@@ -296,11 +264,11 @@
     <section class="py-5 error-page"> 
       <div class="container-fluid"> 
         <div class="error-page__conetnt"> 
-          <div class="d-flex justify-content-between"> <span>Erorr</span><span>خطأ </span></div>
+          <div class="d-flex justify-content-between"> <span class="size-en">Erorr</span><span class="size-ar">خطأ </span></div>
           <h1 class="main-color">404</h1>
           <div class="d-flex justify-content-between"> 
-            <p>Something went Wrong</p>
-            <p>هناك خطأ ما</p>
+            <p class="size-en">Something went Wrong</p>
+            <p class="size-ar">هناك خطأ ما</p>
           </div>
         </div>
       </div>
@@ -310,7 +278,7 @@
       <div class="container-fluid"> 
         <div class="footer-content pt-4">
           <div class="row"> 
-            <div class="col-lg-3 col-md-6 mb-3">
+            <div class="col-lg-3 col-12 mb-3">
               <div class="footer__info">
                 <h3>موقع اعلانات تجارية</h3>
                 <p>موقع اعلانات تجارية موقع اعلانات تجارية موقع اعلانات تجارية موقع اعلانات تجارية</p>
@@ -323,8 +291,8 @@
                 <p>السبت - الخميس 10:00 - 22:00 -الجمعة مغلق</p>
               </div>
             </div>
-            <div class="col-lg-2 col-md-3 mb-3">
-              <h5 class="main-color mb-5">معلومات مهمة</h5>
+            <div class="col-lg-2 col-6 mb-3">
+              <h5 class="main-color mb-md-5 mb-3">معلومات مهمة</h5>
               <ul class="footer__list">    
                 <li><a class="d-flex justify-content-between align-items-center" href="#">  ساسية الخصوصية<i class="icon-link fa fa-chevron-right" aria-hidden="true"></i></a></li>
                 <li><a class="d-flex justify-content-between align-items-center" href="#">  شروط الاستخدام<i class="icon-link fa fa-chevron-right" aria-hidden="true"></i></a></li>
@@ -333,8 +301,8 @@
                 <li><a class="d-flex justify-content-between align-items-center" href="#">  الرؤية<i class="icon-link fa fa-chevron-right" aria-hidden="true"></i></a></li>
               </ul>
             </div>
-            <div class="col-lg-2 col-md-3 mb-3">
-              <h5 class="main-color mb-5">معلومات مهمة</h5>
+            <div class="col-lg-2 col-6 mb-3">
+              <h5 class="main-color mb-md-5 mb-3"> معلومات مهمة</h5>
               <ul class="footer__list">    
                 <li><a class="d-flex justify-content-between align-items-center" href="#">  ساسية الخصوصية<i class="icon-link fa fa-chevron-right" aria-hidden="true"></i></a></li>
                 <li><a class="d-flex justify-content-between align-items-center" href="#">  شروط الاستخدام<i class="icon-link fa fa-chevron-right" aria-hidden="true"></i></a></li>
@@ -343,8 +311,8 @@
                 <li><a class="d-flex justify-content-between align-items-center" href="#">  الرؤية<i class="icon-link fa fa-chevron-right" aria-hidden="true"></i></a></li>
               </ul>
             </div>
-            <div class="col-lg-3 col-md-6 mb-3">
-              <h5 class="main-color mb-5">اشترك معانا</h5>
+            <div class="col-lg-3 col-12 mb-3">
+              <h5 class="main-color mb-md-5 mb-3">اشترك معانا</h5>
               <p>الاشتراك بالنشرة البريدية</p>
               <div class="footer__form">
                 <form class="d-flex align-items-center" action="">
@@ -354,8 +322,8 @@
               </div>
               <p class="mt-lg-5 mt-2">التسويق بالعمولة</p>
             </div>
-            <div class="col-lg-2 col-md-6 mb-3">
-              <div class="footer__logo"><img src="content/assets/images/footer/logo.png" alt="footer logo"></div>
+            <div class="col-lg-2 col-6 mb-3">
+              <div class="footer__logo d-none d-md-block"><img src="content/assets/images/footer/logo.png" alt="footer logo"></div>
             </div>
           </div>
         </div>
@@ -363,19 +331,19 @@
     </footer>
     <div class="footer-down pb-5">
       <div class="container-fluid"> 
-        <ul class="footer-down__pages d-flex align-items-center justify-content-center mb-3 flex-column flex-md-row">
-          <li> <a class="mx-2 p-3 d-block" href="#">الرئيسية</a></li>
-          <li> <a class="mx-2 p-3 d-block" href="#">شركاؤنا</a></li>
-          <li> <a class="mx-2 p-3 d-block" href="#">المنتاجات والخدمات</a></li>
-          <li> <a class="mx-2 p-3 d-block" href="#">العروض</a></li>
-          <li> <a class="mx-2 p-3 d-block" href="#">الباقات</a></li>
+        <ul class="footer-down__pages d-flex align-items-center justify-content-center mb-3">
+          <li> <a class="mx-md-2 me-1 p-md-3 p-1 d-block" href="#">الرئيسية</a></li>
+          <li> <a class="mx-md-2 me-1 p-md-3 p-1 d-block" href="#">شركاؤنا</a></li>
+          <li> <a class="mx-md-2 me-1 p-md-3 p-1 d-block" href="#">المنتاجات والخدمات</a></li>
+          <li> <a class="mx-md-2 me-1 p-md-3 p-1 d-block" href="#">العروض</a></li>
+          <li> <a class="mx-md-2 me-1 p-md-3 p-1 d-block" href="#">الباقات</a></li>
         </ul>
-        <div class="footer-down__payment d-flex align-items-center justify-content-center flex-column flex-md-row"> <a class="payment-images mx-4 mb-4 mb-lg-0 d-block" href="#"><img class="payment-img" src="content/assets/images/footer/payment-1.png" alt="payment"></a><a class="payment-images mx-4 mb-4 mb-lg-0 d-block" href="#"><img class="payment-img" src="content/assets/images/footer/payment-2.png" alt="payment"></a><a class="payment-images mx-4 mb-4 mb-lg-0 d-block" href="#"><img class="payment-img" src="content/assets/images/footer/payment-3.png" alt="payment"></a><a class="payment-images mx-4 mb-4 mb-lg-0 d-block" href="#"><img class="payment-img" src="content/assets/images/footer/payment-4.png" alt="payment"></a><a class="payment-images mx-4 mb-4 mb-lg-0 d-block" href="#"><img class="payment-img" src="content/assets/images/footer/payment-5.png" alt="payment"></a><a class="payment-images mx-4 mb-4 mb-lg-0 d-block" href="#"><img class="payment-img" src="content/assets/images/footer/payment-6.png" alt="payment"></a><a class="payment-images mx-4 mb-4 mb-lg-0 d-block" href="#"><img class="payment-img" src="content/assets/images/footer/payment-7.png" alt="payment"></a>
+        <div class="footer-down__payment d-flex align-items-center justify-content-center"> <a class="payment-images mx-md-4 mb-md-4 mb-lg-0 d-block" href="#"><img class="payment-img" src="content/assets/images/footer/payment-1.png" alt="payment"></a><a class="payment-images mx-md-4 mb-md-4 mb-lg-0 d-block" href="#"><img class="payment-img" src="content/assets/images/footer/payment-2.png" alt="payment"></a><a class="payment-images mx-md-4 mb-md-4 mb-lg-0 d-block" href="#"><img class="payment-img" src="content/assets/images/footer/payment-3.png" alt="payment"></a><a class="payment-images mx-md-4 mb-md-4 mb-lg-0 d-block" href="#"><img class="payment-img" src="content/assets/images/footer/payment-4.png" alt="payment"></a><a class="payment-images mx-md-4 mb-md-4 mb-lg-0 d-block" href="#"><img class="payment-img" src="content/assets/images/footer/payment-5.png" alt="payment"></a><a class="payment-images mx-md-4 mb-md-4 mb-lg-0 d-block" href="#"><img class="payment-img" src="content/assets/images/footer/payment-6.png" alt="payment"></a><a class="payment-images mx-md-4 mb-md-4 mb-lg-0 d-block" href="#"><img class="payment-img" src="content/assets/images/footer/payment-7.png" alt="payment"></a>
         </div>
       </div>
     </div>
     <div class="footer-copy text-center border-top py-2"> 
-      <p class="m-0">Lorem ipsum dolor sit amet.</p>
+      <p class="m-0 main-color">Lorem ipsum dolor sit amet.</p>
     </div>
     <!-- End Footer-->
     <div class="btn-top d-none"><a href="#nav"> <i class="fa fa-angle-up" aria-hidden="true"></i></a></div>

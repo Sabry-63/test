@@ -17,7 +17,7 @@
   <body> 
     <!-- Start Navbar-->
     <nav class="navbar navbar-expand-lg navbar-light" id="nav">
-      <div class="container-fluid"><a class="navbar-brand" href="#"> <img src="content/assets/images/navbar/logo.png" alt="logo"></a>
+      <div class="container-fluid"><a class="navbar-brand" href="index.html"> <img class="d-none d-md-block logo-nav" src="content/assets/images/navbar/logo.png" alt="logo"><img class="d-block d-md-none logo-nav" src="content/assets/images/navbar/logo-mob.png" alt="logo"></a>
         <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
@@ -83,7 +83,7 @@
                         <option value="2">Two</option>
                         <option value="3">Three</option>
                       </select>
-                    </div><a class="dropdown-package__content-link" href="#">انتقل</a>
+                    </div><a class="dropdown-package__content-link" href="factories.html">انتقل</a>
                   </div>
                 </form>
               </div>
@@ -116,7 +116,7 @@
                         <option value="2">Two</option>
                         <option value="3">Three</option>
                       </select>
-                    </div><a class="dropdown-package__content-link" href="#">انتقل</a>
+                    </div><a class="dropdown-package__content-link" href="productandservice.html">انتقل</a>
                   </div>
                 </form>
               </div>
@@ -188,7 +188,7 @@
                       <option value="Dropdown item 6">النشاط 6</option>
                     </select>
                   </div>
-                  <div class="text-center mt-3"><a href="#">الفلتر</a></div>
+                  <div class="text-center mt-3"><a class="dropdown-package__content-link" href="#"> الفلتر</a></div>
                 </form>
               </div>
             </li>
@@ -205,7 +205,7 @@
             </li>
           </ul>
         </div>
-        <div class="navbar-content d-flex align-items-center me-5"> 
+        <div class="navbar-content d-md-flex d-none align-items-center me-5"> 
           <div class="dropdown dropdown-country">
             <button class="btn dropdown-toggle" id="selectCountry" type="button" data-bs-toggle="dropdown" aria-expanded="false">
               <div class="dropdown-country__box"><img src="content/assets/images/navbar/sa.svg" alt="Country"></div>
@@ -219,7 +219,7 @@
           </div>
           <div class="lang-type mx-3"> 
             <div class="dropdown dropdown-lang">
-              <button class="btn dropdown-toggle" id="selectLang" type="button" data-bs-toggle="dropdown" aria-expanded="false"><img src="content/assets/images/navbar/lang.png" alt="lang"></button>
+              <button class="btn dropdown-toggle" id="selectLang" type="button" data-bs-toggle="dropdown" aria-expanded="false"><img src="content/assets/images/navbar/lang.png" alt="lang" title="لغة الموقع"></button>
               <ul class="dropdown-menu" aria-labelledby="selectLang">
                 <li class="mb-2"><a class="dropdown-item me-2 d-flex jusuify-content-between align-items-center dropdown-country__content px-2" href="#"> <span class="w-100">عربي</span><img class="dropdown-country__content-img" src="content/assets/images/navbar/eg.svg" alt="Counrty"></a></li>
                 <li><a class="dropdown-item me-2 d-flex jusuify-content-between align-items-center dropdown-country__content px-2" href="#"><span class="w-100">انجليزي </span><img class="dropdown-country__content-img" src="content/assets/images/navbar/sa.svg" alt="Counrty"></a></li>
@@ -499,9 +499,9 @@
               </div>
             </div>
           </div>
-          <div class="navbar__user mx-1 d-flex align-items-center"> <span>جميل ...</span>
+          <div class="navbar__user mx-1 d-flex align-items-center"> 
             <div class="dropdown-user dropdown">
-              <button class="btn dropdown-toggle" id="user" type="button" data-bs-toggle="dropdown" aria-expanded="false"><span class="navbar__icon"> <i class="far fa-user" aria-hidden="true"></i></span></button>
+              <button class="btn dropdown-toggle ps-2" id="user" type="button" data-bs-toggle="dropdown" aria-expanded="false"><span class="d-none d-md-inline-block">جميل ...</span><span class="navbar__icon"> <i class="far fa-user" aria-hidden="true"></i></span></button>
               <div class="dropdown-menu px-3" aria-labelledby="user">
                 <div class="dropdown-user__head text-center"><a href="info-person.html"><img class="dropdown-user__img" src="content/assets/images/navbar/person.png" alt="person"></a>
                   <p>Username</p>
@@ -538,8 +538,8 @@
           </div>
         </div>
       </div>
+      <!-- End Navbar-->
     </nav>
-    <!-- End Navbar-->
     <!-- Start Overs-->
     <main class="py-4 view__ad"> 
       <section>
@@ -552,29 +552,29 @@
               <div class="view__ad__box"> <a class="fw-bold" href="ad-show-all.html"> <span class="view__ad__box-txt"> كل الاعلانات</span></a><br><span class="view__ad__box-count"> 10</span></div>
             </div>
             <div class="col text-center mb-3">
-              <div class="view__ad__box"> <a class="fw-bold" href="ad-show-all.html"><span class="view__ad__box-txt"> كل الاعلانات</span></a><br><span class="view__ad__box-count"> 10</span></div>
+              <div class="view__ad__box"> <a class="fw-bold" href="ad-show-all.html"><span class="view__ad__box-txt"> قيد المراجعة</span></a><br><span class="view__ad__box-count"> 10</span></div>
             </div>
             <div class="col text-center mb-3">
-              <div class="view__ad__box"> <a class="fw-bold" href="ad-show-all.html"><span class="view__ad__box-txt"> كل الاعلانات</span></a><br><span class="view__ad__box-count"> 10</span></div>
+              <div class="view__ad__box"> <a class="fw-bold" href="ad-show-all.html"><span class="view__ad__box-txt"> المفعلة</span></a><br><span class="view__ad__box-count"> 10</span></div>
             </div>
             <div class="col text-center mb-3">
-              <div class="view__ad__box"> <a class="fw-bold" href="ad-show-all.html"><span class="view__ad__box-txt"> كل الاعلانات</span></a><br><span class="view__ad__box-count"> 10</span></div>
+              <div class="view__ad__box"> <a class="fw-bold" href="ad-show-all.html"><span class="view__ad__box-txt"> مرفوضه</span></a><br><span class="view__ad__box-count"> 10</span></div>
             </div>
             <div class="col text-center mb-3">
-              <div class="view__ad__box"> <a class="fw-bold" href="ad-show-all.html"><span class="view__ad__box-txt"> كل الاعلانات</span></a><br><span class="view__ad__box-count"> 10</span></div>
+              <div class="view__ad__box"> <a class="fw-bold" href="ad-show-all.html"><span class="view__ad__box-txt">منتهية</span></a><br><span class="view__ad__box-count"> 10</span></div>
             </div>
             <div class="col text-center mb-3">
-              <div class="view__ad__box"> <a class="fw-bold" href="ad-show-all.html"><span class="view__ad__box-txt"> كل الاعلانات</span></a><br><span class="view__ad__box-count"> 10</span></div>
+              <div class="view__ad__box"> <a class="fw-bold" href="ad-show-all.html"><span class="view__ad__box-txt">المفضلة</span></a><br><span class="view__ad__box-count"> 10</span></div>
             </div>
           </div>
         </div>
       </section>
-      <section class="my-3"> 
+      <section class="my-1"> 
         <div class="container">
-          <div class="main-title my-5"> 
+          <div class="main-title my-2"> 
             <h3 class="main-title__text px-3">الإحصائيات الاسبوعية</h3>
           </div>
-          <form class="counter__box my-3"> 
+          <form class="counter__box my-2"> 
             <div class="d-flex flex-column flex-md-row align-items-center">
               <div class="form-group">
                 <label for="my-input"> <i class="fa fa-calendar-alt" aria-hidden="true"></i></label>
@@ -589,15 +589,15 @@
               </div>
             </div>
           </form>
-          <div class="chart__content mb-3"><div>
+          <div class="chart__content mb-2"><div>
 <div id="chartContainer" style="height: 300px; width:100%; min-width:600px; "></div>
 </div>
           </div>
-          <div class="d-flex justify-content-between py-3">  
+          <p class="main-color fw-bold">ملاحظة : لايمكن احتساب الزيارات للاعلان المجاني</p>
+          <div class="d-flex justify-content-between py-2">  
             <p class="main-color fw-bold">اجمالي الزيارات السنوية : 49000</p>
             <p class="main-color fw-bold">اجمالي الزيارات السنوية للاعلان الخاص : 49000</p>
           </div>
-          <p class="main-color fw-bold">ملاحظة : لايمكن احتساب الزيارات للاعلان المجاني</p>
         </div>
       </section>
     </main>
@@ -606,7 +606,7 @@
       <div class="container-fluid"> 
         <div class="footer-content pt-4">
           <div class="row"> 
-            <div class="col-lg-3 col-md-6 mb-3">
+            <div class="col-lg-3 col-12 mb-3">
               <div class="footer__info">
                 <h3>موقع اعلانات تجارية</h3>
                 <p>موقع اعلانات تجارية موقع اعلانات تجارية موقع اعلانات تجارية موقع اعلانات تجارية</p>
@@ -619,8 +619,8 @@
                 <p>السبت - الخميس 10:00 - 22:00 -الجمعة مغلق</p>
               </div>
             </div>
-            <div class="col-lg-2 col-md-3 mb-3">
-              <h5 class="main-color mb-5">معلومات مهمة</h5>
+            <div class="col-lg-2 col-6 mb-3">
+              <h5 class="main-color mb-md-5 mb-3">معلومات مهمة</h5>
               <ul class="footer__list">    
                 <li><a class="d-flex justify-content-between align-items-center" href="#">  ساسية الخصوصية<i class="icon-link fa fa-chevron-right" aria-hidden="true"></i></a></li>
                 <li><a class="d-flex justify-content-between align-items-center" href="#">  شروط الاستخدام<i class="icon-link fa fa-chevron-right" aria-hidden="true"></i></a></li>
@@ -629,8 +629,8 @@
                 <li><a class="d-flex justify-content-between align-items-center" href="#">  الرؤية<i class="icon-link fa fa-chevron-right" aria-hidden="true"></i></a></li>
               </ul>
             </div>
-            <div class="col-lg-2 col-md-3 mb-3">
-              <h5 class="main-color mb-5">معلومات مهمة</h5>
+            <div class="col-lg-2 col-6 mb-3">
+              <h5 class="main-color mb-md-5 mb-3"> معلومات مهمة</h5>
               <ul class="footer__list">    
                 <li><a class="d-flex justify-content-between align-items-center" href="#">  ساسية الخصوصية<i class="icon-link fa fa-chevron-right" aria-hidden="true"></i></a></li>
                 <li><a class="d-flex justify-content-between align-items-center" href="#">  شروط الاستخدام<i class="icon-link fa fa-chevron-right" aria-hidden="true"></i></a></li>
@@ -639,8 +639,8 @@
                 <li><a class="d-flex justify-content-between align-items-center" href="#">  الرؤية<i class="icon-link fa fa-chevron-right" aria-hidden="true"></i></a></li>
               </ul>
             </div>
-            <div class="col-lg-3 col-md-6 mb-3">
-              <h5 class="main-color mb-5">اشترك معانا</h5>
+            <div class="col-lg-3 col-12 mb-3">
+              <h5 class="main-color mb-md-5 mb-3">اشترك معانا</h5>
               <p>الاشتراك بالنشرة البريدية</p>
               <div class="footer__form">
                 <form class="d-flex align-items-center" action="">
@@ -650,8 +650,8 @@
               </div>
               <p class="mt-lg-5 mt-2">التسويق بالعمولة</p>
             </div>
-            <div class="col-lg-2 col-md-6 mb-3">
-              <div class="footer__logo"><img src="content/assets/images/footer/logo.png" alt="footer logo"></div>
+            <div class="col-lg-2 col-6 mb-3">
+              <div class="footer__logo d-none d-md-block"><img src="content/assets/images/footer/logo.png" alt="footer logo"></div>
             </div>
           </div>
         </div>
@@ -659,19 +659,19 @@
     </footer>
     <div class="footer-down pb-5">
       <div class="container-fluid"> 
-        <ul class="footer-down__pages d-flex align-items-center justify-content-center mb-3 flex-column flex-md-row">
-          <li> <a class="mx-2 p-3 d-block" href="#">الرئيسية</a></li>
-          <li> <a class="mx-2 p-3 d-block" href="#">شركاؤنا</a></li>
-          <li> <a class="mx-2 p-3 d-block" href="#">المنتاجات والخدمات</a></li>
-          <li> <a class="mx-2 p-3 d-block" href="#">العروض</a></li>
-          <li> <a class="mx-2 p-3 d-block" href="#">الباقات</a></li>
+        <ul class="footer-down__pages d-flex align-items-center justify-content-center mb-3">
+          <li> <a class="mx-md-2 me-1 p-md-3 p-1 d-block" href="#">الرئيسية</a></li>
+          <li> <a class="mx-md-2 me-1 p-md-3 p-1 d-block" href="#">شركاؤنا</a></li>
+          <li> <a class="mx-md-2 me-1 p-md-3 p-1 d-block" href="#">المنتاجات والخدمات</a></li>
+          <li> <a class="mx-md-2 me-1 p-md-3 p-1 d-block" href="#">العروض</a></li>
+          <li> <a class="mx-md-2 me-1 p-md-3 p-1 d-block" href="#">الباقات</a></li>
         </ul>
-        <div class="footer-down__payment d-flex align-items-center justify-content-center flex-column flex-md-row"> <a class="payment-images mx-4 mb-4 mb-lg-0 d-block" href="#"><img class="payment-img" src="content/assets/images/footer/payment-1.png" alt="payment"></a><a class="payment-images mx-4 mb-4 mb-lg-0 d-block" href="#"><img class="payment-img" src="content/assets/images/footer/payment-2.png" alt="payment"></a><a class="payment-images mx-4 mb-4 mb-lg-0 d-block" href="#"><img class="payment-img" src="content/assets/images/footer/payment-3.png" alt="payment"></a><a class="payment-images mx-4 mb-4 mb-lg-0 d-block" href="#"><img class="payment-img" src="content/assets/images/footer/payment-4.png" alt="payment"></a><a class="payment-images mx-4 mb-4 mb-lg-0 d-block" href="#"><img class="payment-img" src="content/assets/images/footer/payment-5.png" alt="payment"></a><a class="payment-images mx-4 mb-4 mb-lg-0 d-block" href="#"><img class="payment-img" src="content/assets/images/footer/payment-6.png" alt="payment"></a><a class="payment-images mx-4 mb-4 mb-lg-0 d-block" href="#"><img class="payment-img" src="content/assets/images/footer/payment-7.png" alt="payment"></a>
+        <div class="footer-down__payment d-flex align-items-center justify-content-center"> <a class="payment-images mx-md-4 mb-md-4 mb-lg-0 d-block" href="#"><img class="payment-img" src="content/assets/images/footer/payment-1.png" alt="payment"></a><a class="payment-images mx-md-4 mb-md-4 mb-lg-0 d-block" href="#"><img class="payment-img" src="content/assets/images/footer/payment-2.png" alt="payment"></a><a class="payment-images mx-md-4 mb-md-4 mb-lg-0 d-block" href="#"><img class="payment-img" src="content/assets/images/footer/payment-3.png" alt="payment"></a><a class="payment-images mx-md-4 mb-md-4 mb-lg-0 d-block" href="#"><img class="payment-img" src="content/assets/images/footer/payment-4.png" alt="payment"></a><a class="payment-images mx-md-4 mb-md-4 mb-lg-0 d-block" href="#"><img class="payment-img" src="content/assets/images/footer/payment-5.png" alt="payment"></a><a class="payment-images mx-md-4 mb-md-4 mb-lg-0 d-block" href="#"><img class="payment-img" src="content/assets/images/footer/payment-6.png" alt="payment"></a><a class="payment-images mx-md-4 mb-md-4 mb-lg-0 d-block" href="#"><img class="payment-img" src="content/assets/images/footer/payment-7.png" alt="payment"></a>
         </div>
       </div>
     </div>
     <div class="footer-copy text-center border-top py-2"> 
-      <p class="m-0">Lorem ipsum dolor sit amet.</p>
+      <p class="m-0 main-color">Lorem ipsum dolor sit amet.</p>
     </div>
     <!-- End Footer-->
     <div class="btn-top d-none"><a href="#nav"> <i class="fa fa-angle-up" aria-hidden="true"></i></a></div>

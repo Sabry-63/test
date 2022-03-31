@@ -15,11 +15,12 @@
     <link rel="stylesheet" href="content/css/main-ltr.css"><link rel="icon" type="image/png" href="content/assets/images/favicon.png"/>
     <link rel="stylesheet" href="content/css/vendor/intlTelInput.min.css">
     <link rel="stylesheet" href="content/css/vendor/niceCountryInput.css">
+    <link rel="stylesheet" href="content/css/vendor/smartuploader.css">
   </head>
   <body> 
     <!-- Start Navbar-->
     <nav class="navbar navbar-expand-lg navbar-light" id="nav">
-      <div class="container-fluid"><a class="navbar-brand" href="#"> <img src="content/assets/images/navbar/logo.png" alt="logo"></a>
+      <div class="container-fluid"><a class="navbar-brand" href="index.html"> <img class="d-none d-md-block logo-nav" src="content/assets/images/navbar/logo.png" alt="logo"><img class="d-block d-md-none logo-nav" src="content/assets/images/navbar/logo-mob.png" alt="logo"></a>
         <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
@@ -85,7 +86,7 @@
                         <option value="2">Two</option>
                         <option value="3">Three</option>
                       </select>
-                    </div><a class="dropdown-package__content-link" href="#">انتقل</a>
+                    </div><a class="dropdown-package__content-link" href="factories.html">انتقل</a>
                   </div>
                 </form>
               </div>
@@ -118,7 +119,7 @@
                         <option value="2">Two</option>
                         <option value="3">Three</option>
                       </select>
-                    </div><a class="dropdown-package__content-link" href="#">انتقل</a>
+                    </div><a class="dropdown-package__content-link" href="productandservice.html">انتقل</a>
                   </div>
                 </form>
               </div>
@@ -190,7 +191,7 @@
                       <option value="Dropdown item 6">النشاط 6</option>
                     </select>
                   </div>
-                  <div class="text-center mt-3"><a href="#">الفلتر</a></div>
+                  <div class="text-center mt-3"><a class="dropdown-package__content-link" href="#"> الفلتر</a></div>
                 </form>
               </div>
             </li>
@@ -207,7 +208,7 @@
             </li>
           </ul>
         </div>
-        <div class="navbar-content d-flex align-items-center me-5"> 
+        <div class="navbar-content d-md-flex d-none align-items-center me-5"> 
           <div class="dropdown dropdown-country">
             <button class="btn dropdown-toggle" id="selectCountry" type="button" data-bs-toggle="dropdown" aria-expanded="false">
               <div class="dropdown-country__box"><img src="content/assets/images/navbar/sa.svg" alt="Country"></div>
@@ -221,7 +222,7 @@
           </div>
           <div class="lang-type mx-3"> 
             <div class="dropdown dropdown-lang">
-              <button class="btn dropdown-toggle" id="selectLang" type="button" data-bs-toggle="dropdown" aria-expanded="false"><img src="content/assets/images/navbar/lang.png" alt="lang"></button>
+              <button class="btn dropdown-toggle" id="selectLang" type="button" data-bs-toggle="dropdown" aria-expanded="false"><img src="content/assets/images/navbar/lang.png" alt="lang" title="لغة الموقع"></button>
               <ul class="dropdown-menu" aria-labelledby="selectLang">
                 <li class="mb-2"><a class="dropdown-item me-2 d-flex jusuify-content-between align-items-center dropdown-country__content px-2" href="#"> <span class="w-100">عربي</span><img class="dropdown-country__content-img" src="content/assets/images/navbar/eg.svg" alt="Counrty"></a></li>
                 <li><a class="dropdown-item me-2 d-flex jusuify-content-between align-items-center dropdown-country__content px-2" href="#"><span class="w-100">انجليزي </span><img class="dropdown-country__content-img" src="content/assets/images/navbar/sa.svg" alt="Counrty"></a></li>
@@ -501,9 +502,9 @@
               </div>
             </div>
           </div>
-          <div class="navbar__user mx-1 d-flex align-items-center"> <span>جميل ...</span>
+          <div class="navbar__user mx-1 d-flex align-items-center"> 
             <div class="dropdown-user dropdown">
-              <button class="btn dropdown-toggle" id="user" type="button" data-bs-toggle="dropdown" aria-expanded="false"><span class="navbar__icon"> <i class="far fa-user" aria-hidden="true"></i></span></button>
+              <button class="btn dropdown-toggle ps-2" id="user" type="button" data-bs-toggle="dropdown" aria-expanded="false"><span class="d-none d-md-inline-block">جميل ...</span><span class="navbar__icon"> <i class="far fa-user" aria-hidden="true"></i></span></button>
               <div class="dropdown-menu px-3" aria-labelledby="user">
                 <div class="dropdown-user__head text-center"><a href="info-person.html"><img class="dropdown-user__img" src="content/assets/images/navbar/person.png" alt="person"></a>
                   <p>Username</p>
@@ -540,15 +541,22 @@
           </div>
         </div>
       </div>
+      <!-- End Navbar-->
     </nav>
-    <!-- End Navbar-->
     <!-- Start Overs-->
     <main class="info-person py-4"> 
       <div class="container-fluid">
         <div class="main-title my-5"> 
           <h3 class="main-title__text px-5">البيانات الشخصية</h3>
         </div>
-        <div class="info-person__img text-center"><img src="content/assets/images/person/person.jpg" alt="person"></div>
+        <div class="info-person__img text-center"><img src="content/assets/images/person/person.jpg" alt="person"></div><div id="drop_zone" class="drop-zone mb-3 input-group-upload px-2">
+<p class="title"><i class="main-color mb-3 fas fa-cloud-upload-alt d-block icon-upload" aria-hidden="true">   </i>اسحب الملفات الى هناأو انقر للاختيار يدويا</p>
+<div class="preview-container">
+</div>
+        <div class="progress">
+          <div class="progress-bar" style="width: 25%" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+        </div></div>
+<input id="file_input" accept="image/*" required type="file" name="file">
         <form class="info-person__form form-validate" action="">
           <fieldset>
             <div class="row"> 
@@ -590,7 +598,7 @@
                   <input class="form-control border-0" type="text" required placeholder="702 123 4567"><span class="active">مفعل</span>
                 </div>
               </div>
-              <!-- End Col--><a class="main-color" href="#">تغيير كلمة المرور </a>
+              <!-- End Col--><a class="main-color" href="#" type="button" data-bs-toggle="modal" data-bs-target="#change">تغيير كلمة المرور </a>
             </div>
             <div class="form-group text-center my-3">
               <input class="submit btn main-btn fw-bold px-4" type="submit" value="حفظ التعديل">
@@ -598,13 +606,35 @@
           </fieldset>
         </form>
       </div>
+      <div class="modal fade" tabindex="-1" aria-labelledby="change" aria-hidden="true" id="change">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content"><span class="btn-close main-color p-3" type="button" data-bs-dismiss="modal" aria-label="Close"><i class="fa fa-times" aria-hidden="true"></i></span>
+            <div class="modal-body p-lg-4 p-3">
+              <div class="login-modal__content">
+                <h5 class="main-color text-center">كلمة المرور الجديده</h5>
+                <form class="mt-3 form-validate">
+                  <label class="mb-2 fw-bold" for="pass">كلمة المرور</label>
+                  <div class="form-group mb-3">
+                    <input class="form-control w-100 password" id="pass" type="password" required placeholder="تأكيد كلمة المرور "><span class="icon-passowrd"> <i class="fa fa-eye show-password" aria-hidden="true"></i><i class="fa fa-eye-slash heddin-password" aria-hidden="true"></i></span>
+                  </div>
+                  <label class="mb-2 fw-bold" for="confirmPassword"> تأكيد كلمة المرور </label>
+                  <div class="form-group mb-3">
+                    <input class="form-control w-100 password" id="confirmPassword" type="password" required placeholder="تأكيد كلمة المرور "><span class="icon-passowrd"> <i class="fa fa-eye show-password" aria-hidden="true"></i><i class="fa fa-eye-slash heddin-password" aria-hidden="true"></i></span>
+                  </div>
+                  <button class="d-block btn main-btn w-100 fw-bold py-2 mb-2" type="submit">تاكيد رمز التحقق  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
     <!-- Start Footer-->
     <footer class="main-footer pb-4">
       <div class="container-fluid"> 
         <div class="footer-content pt-4">
           <div class="row"> 
-            <div class="col-lg-3 col-md-6 mb-3">
+            <div class="col-lg-3 col-12 mb-3">
               <div class="footer__info">
                 <h3>موقع اعلانات تجارية</h3>
                 <p>موقع اعلانات تجارية موقع اعلانات تجارية موقع اعلانات تجارية موقع اعلانات تجارية</p>
@@ -617,8 +647,8 @@
                 <p>السبت - الخميس 10:00 - 22:00 -الجمعة مغلق</p>
               </div>
             </div>
-            <div class="col-lg-2 col-md-3 mb-3">
-              <h5 class="main-color mb-5">معلومات مهمة</h5>
+            <div class="col-lg-2 col-6 mb-3">
+              <h5 class="main-color mb-md-5 mb-3">معلومات مهمة</h5>
               <ul class="footer__list">    
                 <li><a class="d-flex justify-content-between align-items-center" href="#">  ساسية الخصوصية<i class="icon-link fa fa-chevron-right" aria-hidden="true"></i></a></li>
                 <li><a class="d-flex justify-content-between align-items-center" href="#">  شروط الاستخدام<i class="icon-link fa fa-chevron-right" aria-hidden="true"></i></a></li>
@@ -627,8 +657,8 @@
                 <li><a class="d-flex justify-content-between align-items-center" href="#">  الرؤية<i class="icon-link fa fa-chevron-right" aria-hidden="true"></i></a></li>
               </ul>
             </div>
-            <div class="col-lg-2 col-md-3 mb-3">
-              <h5 class="main-color mb-5">معلومات مهمة</h5>
+            <div class="col-lg-2 col-6 mb-3">
+              <h5 class="main-color mb-md-5 mb-3"> معلومات مهمة</h5>
               <ul class="footer__list">    
                 <li><a class="d-flex justify-content-between align-items-center" href="#">  ساسية الخصوصية<i class="icon-link fa fa-chevron-right" aria-hidden="true"></i></a></li>
                 <li><a class="d-flex justify-content-between align-items-center" href="#">  شروط الاستخدام<i class="icon-link fa fa-chevron-right" aria-hidden="true"></i></a></li>
@@ -637,8 +667,8 @@
                 <li><a class="d-flex justify-content-between align-items-center" href="#">  الرؤية<i class="icon-link fa fa-chevron-right" aria-hidden="true"></i></a></li>
               </ul>
             </div>
-            <div class="col-lg-3 col-md-6 mb-3">
-              <h5 class="main-color mb-5">اشترك معانا</h5>
+            <div class="col-lg-3 col-12 mb-3">
+              <h5 class="main-color mb-md-5 mb-3">اشترك معانا</h5>
               <p>الاشتراك بالنشرة البريدية</p>
               <div class="footer__form">
                 <form class="d-flex align-items-center" action="">
@@ -648,8 +678,8 @@
               </div>
               <p class="mt-lg-5 mt-2">التسويق بالعمولة</p>
             </div>
-            <div class="col-lg-2 col-md-6 mb-3">
-              <div class="footer__logo"><img src="content/assets/images/footer/logo.png" alt="footer logo"></div>
+            <div class="col-lg-2 col-6 mb-3">
+              <div class="footer__logo d-none d-md-block"><img src="content/assets/images/footer/logo.png" alt="footer logo"></div>
             </div>
           </div>
         </div>
@@ -657,19 +687,19 @@
     </footer>
     <div class="footer-down pb-5">
       <div class="container-fluid"> 
-        <ul class="footer-down__pages d-flex align-items-center justify-content-center mb-3 flex-column flex-md-row">
-          <li> <a class="mx-2 p-3 d-block" href="#">الرئيسية</a></li>
-          <li> <a class="mx-2 p-3 d-block" href="#">شركاؤنا</a></li>
-          <li> <a class="mx-2 p-3 d-block" href="#">المنتاجات والخدمات</a></li>
-          <li> <a class="mx-2 p-3 d-block" href="#">العروض</a></li>
-          <li> <a class="mx-2 p-3 d-block" href="#">الباقات</a></li>
+        <ul class="footer-down__pages d-flex align-items-center justify-content-center mb-3">
+          <li> <a class="mx-md-2 me-1 p-md-3 p-1 d-block" href="#">الرئيسية</a></li>
+          <li> <a class="mx-md-2 me-1 p-md-3 p-1 d-block" href="#">شركاؤنا</a></li>
+          <li> <a class="mx-md-2 me-1 p-md-3 p-1 d-block" href="#">المنتاجات والخدمات</a></li>
+          <li> <a class="mx-md-2 me-1 p-md-3 p-1 d-block" href="#">العروض</a></li>
+          <li> <a class="mx-md-2 me-1 p-md-3 p-1 d-block" href="#">الباقات</a></li>
         </ul>
-        <div class="footer-down__payment d-flex align-items-center justify-content-center flex-column flex-md-row"> <a class="payment-images mx-4 mb-4 mb-lg-0 d-block" href="#"><img class="payment-img" src="content/assets/images/footer/payment-1.png" alt="payment"></a><a class="payment-images mx-4 mb-4 mb-lg-0 d-block" href="#"><img class="payment-img" src="content/assets/images/footer/payment-2.png" alt="payment"></a><a class="payment-images mx-4 mb-4 mb-lg-0 d-block" href="#"><img class="payment-img" src="content/assets/images/footer/payment-3.png" alt="payment"></a><a class="payment-images mx-4 mb-4 mb-lg-0 d-block" href="#"><img class="payment-img" src="content/assets/images/footer/payment-4.png" alt="payment"></a><a class="payment-images mx-4 mb-4 mb-lg-0 d-block" href="#"><img class="payment-img" src="content/assets/images/footer/payment-5.png" alt="payment"></a><a class="payment-images mx-4 mb-4 mb-lg-0 d-block" href="#"><img class="payment-img" src="content/assets/images/footer/payment-6.png" alt="payment"></a><a class="payment-images mx-4 mb-4 mb-lg-0 d-block" href="#"><img class="payment-img" src="content/assets/images/footer/payment-7.png" alt="payment"></a>
+        <div class="footer-down__payment d-flex align-items-center justify-content-center"> <a class="payment-images mx-md-4 mb-md-4 mb-lg-0 d-block" href="#"><img class="payment-img" src="content/assets/images/footer/payment-1.png" alt="payment"></a><a class="payment-images mx-md-4 mb-md-4 mb-lg-0 d-block" href="#"><img class="payment-img" src="content/assets/images/footer/payment-2.png" alt="payment"></a><a class="payment-images mx-md-4 mb-md-4 mb-lg-0 d-block" href="#"><img class="payment-img" src="content/assets/images/footer/payment-3.png" alt="payment"></a><a class="payment-images mx-md-4 mb-md-4 mb-lg-0 d-block" href="#"><img class="payment-img" src="content/assets/images/footer/payment-4.png" alt="payment"></a><a class="payment-images mx-md-4 mb-md-4 mb-lg-0 d-block" href="#"><img class="payment-img" src="content/assets/images/footer/payment-5.png" alt="payment"></a><a class="payment-images mx-md-4 mb-md-4 mb-lg-0 d-block" href="#"><img class="payment-img" src="content/assets/images/footer/payment-6.png" alt="payment"></a><a class="payment-images mx-md-4 mb-md-4 mb-lg-0 d-block" href="#"><img class="payment-img" src="content/assets/images/footer/payment-7.png" alt="payment"></a>
         </div>
       </div>
     </div>
     <div class="footer-copy text-center border-top py-2"> 
-      <p class="m-0">Lorem ipsum dolor sit amet.</p>
+      <p class="m-0 main-color">Lorem ipsum dolor sit amet.</p>
     </div>
     <!-- End Footer-->
     <div class="btn-top d-none"><a href="#nav"> <i class="fa fa-angle-up" aria-hidden="true"></i></a></div>
@@ -686,5 +716,7 @@
     <script src="content/js/tel.js"> </script>
     <script src="content/js/country.js"> </script>
     <script src="content/js/form.validate.js"> </script>
+    <script src="content/js/vendor/jquery.smartuploader.min.js"> </script>
+    <script src="content/js/upload-img-single.js"> </script>
   </body>
 </html>

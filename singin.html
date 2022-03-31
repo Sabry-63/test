@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod nesciunt voluptatum aspernatur!">
-    <title>Back Password Mail</title>
+    <title>singin </title>
     <link rel="stylesheet" href="content/css/vendor/all.min.css">
     <link rel="stylesheet" href="content/css/vendor/bootstrap.min.css">
     <link rel="stylesheet" href="content/css/vendor/owl.carousel.min.css">
@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="content/css/vendor/choices.min.css">
     <link rel="stylesheet" href="content/css/main-ltr.css"><link rel="icon" type="image/png" href="content/assets/images/favicon.png"/>
   </head>
-  <body class="modal-open"> 
+  <body> 
     <!-- Start Navbar-->
     <nav class="navbar navbar-expand-lg navbar-light" id="nav">
       <div class="container-fluid"><a class="navbar-brand" href="index.html"> <img class="d-none d-md-block logo-nav" src="content/assets/images/navbar/logo.png" alt="logo"><img class="d-block d-md-none logo-nav" src="content/assets/images/navbar/logo-mob.png" alt="logo"></a>
@@ -264,7 +264,7 @@
     <section class="login-page py-5">
       <!-- Start Main Tilte-->
       <div class="main-title"> 
-        <h1 class="main-title__text">تسجيل شريك جديد</h1>
+        <h1 class="main-title__text">تسجيل الدخول</h1>
       </div>
       <!-- End Main Tilte-->
       <div class="container">
@@ -277,20 +277,21 @@
               <div class="login-content__bg p-lg-5 p-3">
                 <h3>تسجيل الدخول</h3>
                 <p>اذا كان لديك حساب . قم بتسجيل الدخول باستخدام عنوان بريدك الالكتروني</p>
-                <form class="login__content-form" action="" id="login-form">
-                  <fieldset></fieldset>
-                  <label class="mb-2 fw-bold" for="email">البريد الالكتروني</label>
-                  <div class="form-group mb-3">
-                    <input class="form-control w-100" id="email" type="email" required name="email" placeholder="البريد الالكتروني ">
-                  </div>
-                  <label class="mb-2 fw-bold" for="password">كلمة المرور</label>
-                  <div class="form-group mb-3">
-                    <input class="form-control w-100 password" id="password" type="password" required placeholder="كلمة المرور "><span class="icon-passowrd"> <i class="fa fa-eye show-password" aria-hidden="true"></i><i class="fa fa-eye-slash heddin-password" aria-hidden="true"></i></span>
-                  </div>
-                  <div class="form-group mb-3"><a class="mb-2 fw-bold" href="#">نسيت كلمة المرور ؟</a></div>
-                  <div class="form-group">
-                    <button class="btn main-btn main-btn--bg" type="submit" value=" ">تسجيل الدحول</button>
-                  </div>
+                <form class="login__content-form form-validate" action="">
+                  <fieldset>
+                    <label class="mb-2 fw-bold" for="email">البريد الالكتروني</label>
+                    <div class="form-group mb-3">
+                      <input class="form-control w-100" id="email" type="email" required name="email" placeholder="البريد الالكتروني ">
+                    </div>
+                    <label class="mb-2 fw-bold" for="password">كلمة المرور</label>
+                    <div class="form-group mb-3">
+                      <input class="form-control w-100 password" id="password" type="password" required placeholder="كلمة المرور "><span class="icon-passowrd"> <i class="fa fa-eye show-password" aria-hidden="true"></i><i class="fa fa-eye-slash heddin-password" aria-hidden="true"></i></span>
+                    </div>
+                    <div class="form-group mb-3"><a class="mb-2 fw-bold" href="back-password-mail.html">نسيت كلمة المرور ؟</a></div>
+                    <div class="form-group">
+                      <button class="btn main-btn main-btn--bg" type="submit" value=" ">تسجيل الدحول</button>
+                    </div>
+                  </fieldset>
                 </form>
               </div>
             </div>
@@ -298,27 +299,11 @@
               <div class="login-content__bg p-lg-5 p-4 h-100">
                 <h3 class="mb-4">عميل جديد </h3>
                 <p>إنشاء حساب له فوائد عديدة :</p>
-                <ul class="mb-5 pb-5 login__content-list"> 
+                <ul class="login__content-list"> 
                   <li>تحقق من أسرع</li>
                   <li>احتفظ بأكثر من عنوان</li>
                   <li>تتبع الطلبات والمزيد</li>
-                </ul><a class="btn main-btn main-btn--bg mt-5" href="#"> إنشاء حساب</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content"><span class="btn-close main-color p-3" type="button" data-bs-dismiss="modal" aria-label="Close"><i class="fa fa-times" aria-hidden="true"></i></span>
-            <div class="modal-body p-lg-4 p-3">
-              <div class="login-modal__content text-center">
-                <h5 class="main-color">استرجاع كلمة المرور</h5>
-                <p class="mb-0 fw-bold">اضف البريد الالكتروني</p>
-                <form class="mt-3 form-validate">
-                  <input class="form-control p-2 w-100 mb-3" type="text" placeholder="اضف البريد الالكتروني">
-                  <button class="btn main-btn w-100 fw-bold py-2 mb-2" type="submit">تاكيد رمز التحقق  </button>
-                </form>
+                </ul><a class="btn main-btn main-btn--bg login__content-link" href="login.html"> إنشاء حساب</a>
               </div>
             </div>
           </div>
@@ -408,6 +393,5 @@
     <script src="content/js/vendor/jquery.validate.min.js"> </script>
     <script src="content/js/vendor/additional-methods.min.js"> </script>
     <script src="content/js/form.validate.js"> </script>
-    <script src="content/js/modal.js"> </script>
   </body>
 </html>
